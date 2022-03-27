@@ -1,5 +1,5 @@
 use postgres::{error::Error, Client, NoTls};
-use crate::Config;
+use crate::cfg::Config;
 
 pub fn connect_db(cfg: &Config) -> Result<Client, Error> {
     let cf = &cfg.cf;
